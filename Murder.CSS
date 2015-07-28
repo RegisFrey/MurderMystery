@@ -1,0 +1,42 @@
+div{
+    padding: 5px;
+    margin: 5px;
+}
+
+#Container{
+    background-color: black;
+}
+#Header{
+    background-color: blueviolet;
+}
+#Menu{
+    background-color: cadetblue;
+}
+#nav{
+    background-color: antiquewhite;
+}
+#Left-Coloum{
+    background-color: coral;
+}
+#Char-Image{
+    background-color: crimson;
+}
+#PlayerName{
+    background-color: aqua;
+}
+#Bio Book{
+    background-color: darkgray;
+}
+#Inventory{background-color: darkgreen}
+#Right-Coloum{
+    background-color: deeppink;
+}
+#Main Text{
+    background-color: dodgerblue;
+}
+#Convo-Text{
+    background-color: chocolate;
+}
+#Convo-Text{
+    background-color:darkmagenta;
+}
