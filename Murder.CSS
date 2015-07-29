@@ -1,38 +1,54 @@
-div{
-    padding: 5px;
-    margin: 5px;
+html, body{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #330533
 }
 
 #Container{
-    background-color: black;
+    height: 100%
 }
 #Header{
     background-color: blueviolet;
+    display: none;
 }
-#Menu{
-    background-color: cadetblue;
+#Main{
+
+    height: 96%;
 }
-#nav{
-    background-color: antiquewhite;
-}
-#Left-Coloum{
+#Left-Column{
     background-color: coral;
+    width: 21%;
+    float: left;
+    padding: 2%;
+    height: 100%;
+    text-align: center;
 }
 #Char-Image{
     background-color: crimson;
+    width: 150px;
+    height: 150px;
 }
 #PlayerName{
     background-color: aqua;
 }
-#Bio Book{
+#Bio-Book{
     background-color: darkgray;
+    width: 150px;
+    height: 120px;
+    margin-top: 15px;
 }
 #Inventory{background-color: darkgreen}
-#Right-Coloum{
-    background-color: deeppink;
+#Right-Column{
+    width: 71%;
+    float: left;
+    padding: 2%;
+    height: 100%;
 }
-#Main Text{
-    background-color: dodgerblue;
+#Main-Text{
+    color: aliceblue;
+    font-size: 15pt;
 }
 #Convo-Text{
     background-color: chocolate;
