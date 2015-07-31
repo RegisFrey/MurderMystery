@@ -3,7 +3,8 @@ html, body{
     margin: 0px;
     width: 100%;
     height: 100%;
-    background-color: #330533
+    background-color: #330533;
+    color:#D4C2F6;
 }
 
 #Container{
@@ -41,7 +42,17 @@ html, body{
     height: 120px;
     margin-top: 15px;
 }
-#Inventory{background-color: rgb(43, 25, 87)}
+
+#Inventory{
+    background-color: rgb(43, 25, 87);
+    min-height: 25px;
+    border: 1px #D4C2F6 solid;
+    color: #D4C2F6;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 30px; /* wide because it is space for the list bullet */
+    text-align: left;
+}
 #Right-Column{
     width: 71%;
     float: left;
@@ -52,13 +63,15 @@ html, body{
     color: aliceblue;
     font-size: 15pt;
 }
+#Meatballs { /* aka room name */
+    color: #D4C2F6;
+}
 #Spaghetti-options a{
     font-size: 15pt;
-    padding: 1%;
-}
-#Convo-Text{
-    background-color: chocolate;
-}
-#Convo-Text{
-    background-color:darkmagenta;
+    /* force padding to be applied to all sides not just top bottom: */
+    display: inline-block; /* default for <a> is inline */
+    padding: 10px;
+    margin: 3px;
+    color: #D4C2F6;
+    background-color: #5D115E;
 }
