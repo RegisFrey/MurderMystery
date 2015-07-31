@@ -41,7 +41,7 @@ html, body{
     height: 120px;
     margin-top: 15px;
 }
-#Inventory{background-color: darkgreen}
+#Inventory{background-color: rgb(43, 25, 87)}
 #Right-Column{
     width: 71%;
     float: left;
