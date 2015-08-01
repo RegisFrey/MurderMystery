@@ -19,6 +19,9 @@ game_text.mainhall = new TextBlock(
 		'Approach The Purple Haired Girl': function(){
             addTextBlock(game_text.elena1);
 			addTextBlock(game_text.evonnie1);
+		},
+        'Go Over To The Two Guys': function(){
+            addTextBlock(game_text.introguys);
 		}
 	}
 );
@@ -42,6 +45,31 @@ game_text.elena2 = new TextBlock(
     // description
     "... ... Uh, okay. Well, I'm Elena.",false,"Elena"
     );
+
+game_text.evonnie2 = new TextBlock(
+    "Cool...I'm..Evonnie.",
+    //options
+    {
+        'Continue Talking To Evonnie': function(){
+            addTextBlock(game_text.elena3);
+		},
+        'Go Over To The Two Guys': function(){
+            addTextBlock(game_text.introguys);
+		}
+    },
+    "Evonnie"
+);
+
+game_text.elena3 = new TextBlock(
+    "",{},"Elena"
+);
+game_text.introguys = new TextBlock(
+    "you see the guys",
+    {}
+);
+
+
+
 
 game_text.obscenties = new TextBlock(
 	"@#$! &^#%$. ... $#!^!!!",
