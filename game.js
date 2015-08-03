@@ -11,7 +11,7 @@ $(document).ready(function() {
     updateMainText("Quick brown fox jumped over the lazy red dog hi.");
     updateMainText("I dislike turtles");
     */
-    changeRoom('Vault Room');
+    changeRoom('In Front of The Mansion');
     addTextBlock(game_text.start_descrip);
 });
 

@@ -42,7 +42,9 @@ html, body{
     height: 120px;
     margin-top: 15px;
 }
+
 #Inventory{
+    background-color: rgb(43, 25, 87);
     min-height: 25px;
     border: 1px #D4C2F6 solid;
     color: #D4C2F6;

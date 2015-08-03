@@ -1,0 +1,61 @@
+var game_text = {};
+
+game_text.start_descrip = new TextBlock(
+	// description
+	"So, I’m standing here in front of what seems to be a creepy yet mysteriously elegant mansion. Exactly, 7 sharp in the evening. The place has its own land so there weren’t any neighboring houses- mansions. Don’t get me wrong, it’s not my house. I could never afford this.<br/>A couple of weeks back I’d been given an invitation to a house party from someone named Meera. I had never met anyone named meera so I didn’t understand why I’d been invited at all. Though the letter was addressed to me. No typos, misspellings, nada. I’d debated whether to come but overall knew I had to because there must’ve been a reason.<br/>There had to be a reason an anonymous person had called out to me. I don’t know how the found me but it was intentional.",
+	// now the options
+	{
+		'Check the vault': function(){
+			if ( checkInventory('mysterious key') ) {
+				removeInventory('mysterious key');
+				addTextBlock(game_text.vault_opened);
+			} else {
+				addTextBlock(game_text.vault_locked);
+			}
+		},
+		'Go to the other room': function(){
+			changeRoom('Key Room');
+			addTextBlock(game_text.room2);
+		},
+		'Shout obscenities': function(){
+			addTextBlock(game_text.obscenties);
+		}
+	}
+);
+
+game_text.obscenties = new TextBlock(
+	"@#$! &^#%$. ... $#!^!!!",
+	// no options here
+	false,
+	'You (the player)' // added speaker
+);
+
+game_text.vault_locked = new TextBlock(
+	"The vault is locked :(",
+	// no options here
+	false
+);
+game_text.vault_opened = new TextBlock(
+	"You unlocked the vault! You are a winner!",
+	// no options here
+	false
+);
+game_text.room2 = new TextBlock(
+	// description
+	"This room is full of keys.",
+	// now the options
+	{
+		'Take a key': function(){
+            if (checkInventory("mysterious key")) {
+                console.log("already have mysterious key");
+            }
+            else {
+                addInventory('mysterious key');
+            }
+		},
+		'Go back': function(){
+			changeRoom('Vault Room');
+			addTextBlock(game_text.start_descrip);
+		}
+	}
+);
